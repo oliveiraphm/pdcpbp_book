@@ -1,0 +1,746 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "iris_data_auto_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "sepal_length",
+          "sepal_width",
+          "petal_length",
+          "petal_width",
+          "species"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 150,
+        "min_value": 150
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "sepal_length",
+        "max_value": 4.3,
+        "min_value": 4.3
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "sepal_length",
+        "max_value": 7.9,
+        "min_value": 7.9
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "sepal_length",
+        "max_value": 5.843333333333334,
+        "min_value": 5.843333333333334
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "sepal_length",
+        "max_value": 5.8,
+        "min_value": 5.8
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": "lower",
+        "column": "sepal_length",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              4.6,
+              4.6
+            ],
+            [
+              5.1,
+              5.1
+            ],
+            [
+              5.8,
+              5.8
+            ],
+            [
+              6.4,
+              6.4
+            ],
+            [
+              7.2,
+              7.2
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "sepal_length",
+        "value_set": [
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1,
+          5.2,
+          5.3,
+          5.4,
+          5.5,
+          5.6,
+          5.7,
+          5.8,
+          5.9,
+          6.0,
+          6.1,
+          6.2,
+          6.3,
+          6.4,
+          6.5,
+          6.6,
+          6.7,
+          6.8,
+          6.9,
+          7.0,
+          7.1,
+          7.2,
+          7.3,
+          7.4,
+          7.6,
+          7.7,
+          7.9
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "sepal_length"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "sepal_length",
+        "max_value": 0.23333333333333334,
+        "min_value": 0.23333333333333334
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "sepal_length",
+        "type_list": [
+          "DECIMAL",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "DecimalType()",
+          "DoubleType",
+          "DoubleType()",
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT64",
+          "FLOAT8",
+          "FloatType",
+          "FloatType()",
+          "NUMERIC",
+          "REAL",
+          "float",
+          "float16",
+          "float32",
+          "float64",
+          "float_",
+          "number",
+          "Float32",
+          "Float64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "sepal_width",
+        "max_value": 2.0,
+        "min_value": 2.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "sepal_width",
+        "max_value": 4.4,
+        "min_value": 4.4
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "sepal_width",
+        "max_value": 3.0573333333333337,
+        "min_value": 3.0573333333333337
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "sepal_width",
+        "max_value": 3.0,
+        "min_value": 3.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": "lower",
+        "column": "sepal_width",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              2.3,
+              2.3
+            ],
+            [
+              2.8,
+              2.8
+            ],
+            [
+              3.0,
+              3.0
+            ],
+            [
+              3.3,
+              3.3
+            ],
+            [
+              3.8,
+              3.8
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "sepal_width",
+        "value_set": [
+          2.0,
+          2.2,
+          2.3,
+          2.4,
+          2.5,
+          2.6,
+          2.7,
+          2.8,
+          2.9,
+          3.0,
+          3.1,
+          3.2,
+          3.3,
+          3.4,
+          3.5,
+          3.6,
+          3.7,
+          3.8,
+          3.9,
+          4.0,
+          4.1,
+          4.2,
+          4.4
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "sepal_width"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "sepal_width",
+        "max_value": 0.15333333333333332,
+        "min_value": 0.15333333333333332
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "sepal_width",
+        "type_list": [
+          "DECIMAL",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "DecimalType()",
+          "DoubleType",
+          "DoubleType()",
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT64",
+          "FLOAT8",
+          "FloatType",
+          "FloatType()",
+          "NUMERIC",
+          "REAL",
+          "float",
+          "float16",
+          "float32",
+          "float64",
+          "float_",
+          "number",
+          "Float32",
+          "Float64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "petal_length",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "petal_length",
+        "max_value": 6.9,
+        "min_value": 6.9
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "petal_length",
+        "max_value": 3.7580000000000005,
+        "min_value": 3.7580000000000005
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "petal_length",
+        "max_value": 4.35,
+        "min_value": 4.35
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": "lower",
+        "column": "petal_length",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              1.3,
+              1.3
+            ],
+            [
+              1.6,
+              1.6
+            ],
+            [
+              4.3,
+              4.3
+            ],
+            [
+              5.1,
+              5.1
+            ],
+            [
+              6.1,
+              6.1
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "petal_length",
+        "value_set": [
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.9,
+          3.0,
+          3.3,
+          3.5,
+          3.6,
+          3.7,
+          3.8,
+          3.9,
+          4.0,
+          4.1,
+          4.2,
+          4.3,
+          4.4,
+          4.5,
+          4.6,
+          4.7,
+          4.8,
+          4.9,
+          5.0,
+          5.1,
+          5.2,
+          5.3,
+          5.4,
+          5.5,
+          5.6,
+          5.7,
+          5.8,
+          5.9,
+          6.0,
+          6.1,
+          6.3,
+          6.4,
+          6.6,
+          6.7,
+          6.9
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "petal_length"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "petal_length",
+        "max_value": 0.2866666666666667,
+        "min_value": 0.2866666666666667
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "petal_length",
+        "type_list": [
+          "DECIMAL",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "DecimalType()",
+          "DoubleType",
+          "DoubleType()",
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT64",
+          "FLOAT8",
+          "FloatType",
+          "FloatType()",
+          "NUMERIC",
+          "REAL",
+          "float",
+          "float16",
+          "float32",
+          "float64",
+          "float_",
+          "number",
+          "Float32",
+          "Float64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "petal_width",
+        "max_value": 0.1,
+        "min_value": 0.1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "petal_width",
+        "max_value": 2.5,
+        "min_value": 2.5
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "petal_width",
+        "max_value": 1.1993333333333336,
+        "min_value": 1.1993333333333336
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "petal_width",
+        "max_value": 1.3,
+        "min_value": 1.3
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": "lower",
+        "column": "petal_width",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              0.2,
+              0.2
+            ],
+            [
+              0.3,
+              0.3
+            ],
+            [
+              1.3,
+              1.3
+            ],
+            [
+              1.8,
+              1.8
+            ],
+            [
+              2.3,
+              2.3
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "petal_width",
+        "value_set": [
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6,
+          1.7,
+          1.8,
+          1.9,
+          2.0,
+          2.1,
+          2.2,
+          2.3,
+          2.4,
+          2.5
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "petal_width"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "petal_width",
+        "max_value": 0.14666666666666667,
+        "min_value": 0.14666666666666667
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "petal_width",
+        "type_list": [
+          "DECIMAL",
+          "DOUBLE",
+          "DOUBLE_PRECISION",
+          "DecimalType()",
+          "DoubleType",
+          "DoubleType()",
+          "FLOAT",
+          "FLOAT4",
+          "FLOAT64",
+          "FLOAT8",
+          "FloatType",
+          "FloatType()",
+          "NUMERIC",
+          "REAL",
+          "float",
+          "float16",
+          "float32",
+          "float64",
+          "float_",
+          "number",
+          "Float32",
+          "Float64"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "species",
+        "value_set": [
+          "setosa",
+          "versicolor",
+          "virginica"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "species"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "species",
+        "max_value": 0.02,
+        "min_value": 0.02
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "species",
+        "type_list": [
+          "CHAR",
+          "NCHAR",
+          "NTEXT",
+          "NVARCHAR",
+          "STRING",
+          "StringType",
+          "StringType()",
+          "TEXT",
+          "VARCHAR",
+          "dtype('O')",
+          "object",
+          "str",
+          "string",
+          "FixedString"
+        ]
+      },
+      "meta": {}
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "columns": {
+      "petal_length": {
+        "description": ""
+      },
+      "petal_width": {
+        "description": ""
+      },
+      "sepal_length": {
+        "description": ""
+      },
+      "sepal_width": {
+        "description": ""
+      },
+      "species": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.18.16"
+  }
+}
