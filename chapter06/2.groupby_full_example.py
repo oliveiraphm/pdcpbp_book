@@ -1,5 +1,5 @@
 import pandas as pd
-it 
+
 data = {
     'Category': [
         'Electronics', 'Electronics', 'Electronics', 'Electronics', 
